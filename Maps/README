@@ -1,0 +1,10 @@
+ns - single path maze
+nm - multiple path maze
+
+Optimal solutions:
+nm5b 72
+nm5wide 32
+nm10b 233
+nm100b 3330
+ns100b 2454
+

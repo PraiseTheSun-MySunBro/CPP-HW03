@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Maps">
+      <UniqueIdentifier>{d2198dd2-f000-40d6-a514-f2cf1a69883f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MazeRunner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HW03.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MazeRunner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Maps\100.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\200.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\500.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\1000.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\1500.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\2000.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\nm5b.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\nm5wide.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\nm10b.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\nm100b.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\ns5b.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\ns10b.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\ns15b.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\ns20b.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\ns50b.maze">
+      <Filter>Maps</Filter>
+    </None>
+    <None Include="Maps\ns100b.maze">
+      <Filter>Maps</Filter>
+    </None>
+  </ItemGroup>
+</Project>
