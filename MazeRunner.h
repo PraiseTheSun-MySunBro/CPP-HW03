@@ -1,29 +1,22 @@
 #pragma once
 
+#include "Global.h"
 #include <string>
 #include <vector>
 
-enum Heading 
-{
-	N, S, W, E
-};
-
-enum CellType
-{
-	Treasure = -2, Wall = -1, StartPos = 0
-};
 
 class MazeRunner 
 {
 public:
-	MazeRunner(std::string fileName);
-	~MazeRunner();
 	bool move(Heading heading);
 	std::vector<std::vector<int>> scan();
-	std::pair<int, int> getPosition();
+	Position getPosition();
 	std::pair<int, int> getSize();
+
+	MazeRunner(std::string fileName);
+	~MazeRunner();
 private:
-	std::vector<std::vector<int>> map;
 	int x;
 	int y;
+	std::vector<std::vector<int>> map;
 };

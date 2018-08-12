@@ -1,7 +1,7 @@
 #include "stdafx.h"
+#include "MazeRunner.h"
 #include <fstream>
 #include <iostream>
-#include "MazeRunner.h"
 
 
 MazeRunner::MazeRunner(std::string fileName)
@@ -46,8 +46,6 @@ MazeRunner::MazeRunner(std::string fileName)
 	}
 
 	file.close();
-
-	std::cout << x << std::endl << y << std::endl;
 }
 
 MazeRunner::~MazeRunner()
@@ -101,12 +99,16 @@ std::vector<std::vector<int>> MazeRunner::scan()
 	return result;
 }
 
-std::pair<int, int> MazeRunner::getPosition()
+Position MazeRunner::getPosition()
 {
-	return std::pair<int, int>(this->x, this->y);
+	return Position(this->x, this->y);
 }
 
 std::pair<int, int> MazeRunner::getSize()
 {
+	if (this->map.size() == 0)
+	{
+		return std::pair<int, int>(0, 0);
+	}
 	return std::pair<int, int>(this->map.size(), this->map[0].size());
 }

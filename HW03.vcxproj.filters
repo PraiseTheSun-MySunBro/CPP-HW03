@@ -16,6 +16,12 @@
     <Filter Include="Maps">
       <UniqueIdentifier>{d2198dd2-f000-40d6-a514-f2cf1a69883f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Solver">
+      <UniqueIdentifier>{a0707c4a-e4ce-438b-bb51-cc15ba59872c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Solver">
+      <UniqueIdentifier>{ed133c47-0fba-4895-ae5d-e81910c45f74}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -27,6 +33,18 @@
     <ClInclude Include="MazeRunner.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Solver.h">
+      <Filter>Header Files\Solver</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header Files\Solver</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Route.h">
+      <Filter>Header Files\Solver</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -37,6 +55,15 @@
     </ClCompile>
     <ClCompile Include="MazeRunner.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Solver.cpp">
+      <Filter>Source Files\Solver</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source Files\Solver</Filter>
+    </ClCompile>
+    <ClCompile Include="Route.cpp">
+      <Filter>Source Files\Solver</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
