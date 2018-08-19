@@ -2,10 +2,12 @@
 #include "MazeRunner.h"
 #include <fstream>
 #include <iostream>
+#include <ctime>
 
 
 MazeRunner::MazeRunner(std::string fileName)
 {
+	auto startTime = clock();
 	std::ifstream file(fileName);
 	if (!file.is_open())
 	{
@@ -17,6 +19,8 @@ MazeRunner::MazeRunner(std::string fileName)
 	std::string fileLine;
 	while (std::getline(file, fileLine))
 	{
+		if (fileLine.empty()) continue;
+
 		auto line = std::vector<int>();
 
 		for (int i = 0; i < fileLine.size(); ++i)
@@ -46,6 +50,8 @@ MazeRunner::MazeRunner(std::string fileName)
 	}
 
 	file.close();
+
+	std::cout << "File read endTime: " << clock() - startTime << std::endl;
 }
 
 MazeRunner::~MazeRunner()
